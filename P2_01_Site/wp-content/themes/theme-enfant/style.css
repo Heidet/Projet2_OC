@@ -1,0 +1,120 @@
+/*
+Theme Name: Theme enfant
+Description: Theme enfant de Antoine hestia
+Author: Antoine - hestia
+Author URI: https://hestia.com
+Template: hestia 
+Version: 0.1.0
+*/
+
+/************** Page principal ***************/ 
+.page-header {
+  margin: 0;
+}
+.navbar.navbar-transparent > .container {
+  padding-top : 10px;
+}
+.navbar .navbar-header .navbar-brand img {
+  max-height: 60px;
+}
+.navbar.navbar-transparent {
+  background-color: white; 
+}
+.navbar-default .navbar-nav > li > a {
+  color: #008194; 
+}
+.about, .hestia-about {
+  padding: 40px 0 30px; 
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #e91e63 
+}
+@keyframes logoaccueil {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(0px) rotateX(360deg);
+    }
+}
+.hestia-bottom-footer-content {
+  	display: none;
+}
+.hestia-scroll-to-top {
+  background-color: #e91e63;
+}
+.footer-big p {
+  color: #e91e63;
+}
+.css-events-list {
+     overflow-x: auto;
+}
+/************** Inscription évenement ***************/ 
+.css-events-list table.events-table td {
+  padding: 8px;
+}
+.ReservationBouton button {
+  color: black; 
+}
+/************** Plus d'infos ***************/ 
+.events-table tbody tr:hover {
+  color: #e91e63; 
+}
+/************** Activites du mois***************/ 
+.hestia-title.text-center {
+  color: white; 
+}
+.section.related-posts {
+  display: none;
+}
+.em-booking-form label {
+  min-width: 130px; 
+}
+.em-booking-login-form.form-group {
+  display: none;
+}
+div.em-booking-login {
+  border-left: 0. 
+}
+/************** Média querie ***************/ 
+
+@media screen and (min-width: 1080px){
+.title-logo-wrapper {
+    -moz-animation: logoaccueil 6s linear alternate infinite;
+    -ms-animation: logoaccueil 6s linear alternate infinite;
+    -o-animation: logoaccueil 6s linear alternate infinite;
+    -webkit-animation: logoaccueil 6s linear alternate infinite;
+    animation: logoaccueil 6s linear alternate infinite;
+}
+.card {
+    -moz-transition-property: transform;
+	-moz-transition-duration: 1s;
+    -moz-transition-timing-function: ease;
+    -ms-transition-property: transform;
+	-ms-transition-duration: 1s;
+    -ms-transition-timing-function: ease;
+  	-o-transition-property: transform;
+	-o-transition-duration: 1s;
+    -o-transition-timing-function: ease;
+    -webkit-transition-property: transform;
+	-webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+    transition-property: transform;
+	transition-duration: 1s;
+    transition-timing-function: ease;
+}
+.card:hover {
+  	transform: translateX(150px);
+  }
+}
+@media screen and (max-width: 768px){
+.css-events-list table.events-table td {
+    display: block; 
+  }
+.events-table > thead {
+  display: none;
+  }
+.css-events-list table.events-table td.ReservationBouton {
+  padding-bottom: 20px; 
+  }
+}
